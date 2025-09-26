@@ -1,23 +1,18 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, Instagram, MapPin } from "lucide-react";
-
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Olá, gostaria de agendar uma sessão terapêutica.");
     window.open(`https://wa.me/5511999999999?text=${message}`, "_blank");
   };
-
   const handleEmailClick = () => {
     window.open("mailto:telma@terapiaintegrativa.com", "_blank");
   };
-
   const handleInstagramClick = () => {
     window.open("https://instagram.com/telmacavalcante_terapia", "_blank");
   };
-
-  return (
-    <section className="py-20 px-4 bg-gradient-warm">
+  return <section className="py-20 px-4 bg-gradient-warm">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-16 animate-fade-in">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -29,12 +24,7 @@ const ContactSection = () => {
         </div>
 
         <div className="mb-12">
-          <Button 
-            variant="whatsapp" 
-            size="xl"
-            onClick={handleWhatsAppClick}
-            className="font-inter text-lg px-12 py-4 animate-gentle-float"
-          >
+          <Button variant="whatsapp" size="xl" onClick={handleWhatsAppClick} className="font-inter text-lg px-12 py-4 animate-gentle-float">
             <Phone className="w-6 h-6" />
             Agendar no WhatsApp
           </Button>
@@ -77,13 +67,9 @@ const ContactSection = () => {
             <MapPin className="w-5 h-5 text-accent" />
             <h3 className="font-playfair text-xl font-semibold text-foreground">Atendimento</h3>
           </div>
-          <p className="font-inter text-muted-foreground">
-            Presencial em São Paulo/SP e Online para todo o Brasil
-          </p>
+          <p className="font-inter text-muted-foreground">Presencial em Pacaraima/RR e Online para todo o Brasil</p>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactSection;
