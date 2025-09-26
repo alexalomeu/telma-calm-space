@@ -18,11 +18,10 @@ const AboutSection = () => {
             </h2>
             
             <div className="space-y-6 font-inter text-lg text-muted-foreground leading-relaxed">
-              <p>Meu objetivo é ajudar você a alcançar bem-estar físico, mental e emocional.
-Acredito profundamente que cada pessoa possui em si a capacidade de equilíbrio e transformação.
+              <p>Meu objetivo é ajudar você a alcançar bem-estar físico, mental e emocional. Acredito profundamente que cada pessoa possui em si a capacidade de equilíbrio e transformação. 
 Minha abordagem combina técnicas da psicoterapia e da neurociência com práticas integrativas naturais, criando um espaço acolhedor em que mente e corpo são cuidados de forma harmoniosa.</p>
               
-              <p>Minha abordagem combina técnicas da psicoterapia e da neurociência com práticas integrativas naturais, criando um espaço acolhedor em que mente e corpo são cuidados de forma harmoniosa.</p>
+              <p>Através de um olhar humanizado, respeitoso e acolhedor, acompanho você em sua jornada de autoconhecimento, equilíbrio e bem-estar, oferecendo ferramentas práticas para que possa viver com mais leveza e se libertar do que tem limitado a sua vida.</p>
               
               <p>
                 Através de um olhar humanizado e respeitoso, acompanho pessoas em sua jornada de 
