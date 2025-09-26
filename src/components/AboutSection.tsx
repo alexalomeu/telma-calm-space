@@ -39,6 +39,7 @@ Além disso, auxilio você a identificar a verdadeira origem dos problemas emoci
 
                  Além disso, auxilio você a identificar a verdadeira origem dos problemas emocionais — como ansiedade, depressão, pânico, compulsão, entre outros — trabalhando na causa e não apenas nos sintomas, para que a transformação seja profunda e duradoura.<br>
               </p>
+            </div>
             <div className="mt-8 p-6 bg-warm-cream rounded-xl border border-warm-earth/20">
               <blockquote className="font-playfair text-xl italic text-warm-brown text-center">
                 "Cada ser humano é único, e merece um cuidado tão especial quanto sua essência."
