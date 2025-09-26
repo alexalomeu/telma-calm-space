@@ -7,7 +7,8 @@ import {
   Flower2, 
   Leaf, 
   Sparkles,
-  CircleDot 
+  CircleDot,
+  Zap
 } from "lucide-react";
 
 const approaches = [
@@ -50,6 +51,11 @@ const approaches = [
     title: "Iridologia",
     description: "Através da análise da íris dos olhos, identifica tendências e necessidades do corpo, favorecendo a autoconsciência e cuidados personalizados.",
     icon: Eye,
+  },
+  {
+    title: "EFT",
+    description: "Técnica de Liberdade Emocional que combina acupressão e psicologia para liberar bloqueios emocionais e reduzir o estresse de forma rápida e eficaz.",
+    icon: Zap,
   },
 ];
 
