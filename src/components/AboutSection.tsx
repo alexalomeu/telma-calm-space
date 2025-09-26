@@ -18,27 +18,20 @@ const AboutSection = () => {
             </h2>
             
             <div className="space-y-6 font-inter text-lg text-muted-foreground leading-relaxed">
-              <p>Meu objetivo é ajudar você a alcançar bem-estar físico, mental e emocional. Acredito profundamente que cada pessoa possui em si a capacidade de equilíbrio e transformação.<br>
-                 Minha abordagem combina técnicas da psicoterapia e da neurociência com práticas integrativas naturais, criando um espaço acolhedor em que mente e corpo são cuidados de forma harmoniosa.<br>
-                 Através de um olhar humanizado, respeitoso e acolhedor, acompanho você em sua jornada de autoconhecimento, equilíbrio e bem-estar, oferecendo ferramentas práticas para que possa viver com mais leveza e se libertar do que tem limitado a sua vida.<br>
-                 Através de um olhar humanizado, respeitoso e acolhedor, acompanho você em sua jornada de autoconhecimento, equilíbrio e bem-estar, oferecendo ferramentas práticas para que possa viver com mais leveza e se libertar do que tem limitado a sua vida.<br>
-                 Através de um olhar humanizado, respeitoso e acolhedor, acompanho você em sua jornada de autoconhecimento, equilíbrio e bem-estar, oferecendo ferramentas práticas para que possa viver com mais leveza e se libertar do que tem limitado a sua vida.<br>
+              <p>Meu objetivo é ajudar você a alcançar bem-estar físico, mental e emocional.
+Acredito profundamente que cada pessoa possui em si a capacidade de equilíbrio e transformação.
 
-
-]]]]
-
-
-
-
-Através de um olhar humanizado, respeitoso e acolhedor, acompanho você em sua jornada de autoconhecimento, equilíbrio e bem-estar, oferecendo ferramentas práticas para que possa viver com mais leveza e se libertar do que tem limitado a sua vida.
-
-Além disso, auxilio você a identificar a verdadeira origem dos problemas emocionais — como ansiedade, depressão, pânico, compulsão, entre outros — trabalhando na causa e não apenas nos sintomas, para que a transformação seja profunda e duradoura.
-            </p>            
+            </p>
               
+              <p>Minha abordagem combina técnicas da psicoterapia e da neurociência com práticas integrativas naturais, criando um espaço acolhedor em que mente e corpo são cuidados de forma harmoniosa.</p>
+              
+              <p>
+                Através de um olhar humanizado e respeitoso, acompanho pessoas em sua jornada de 
+                autoconhecimento, oferecendo ferramentas práticas para que possam viver com mais 
+                leveza, equilíbrio e autenticidade.
+              </p>
             </div>
 
-                 Além disso, auxilio você a identificar a verdadeira origem dos problemas emocionais — como ansiedade, depressão, pânico, compulsão, entre outros — trabalhando na causa e não apenas nos sintomas, para que a transformação seja profunda e duradoura.<br>
-              </p>
             <div className="mt-8 p-6 bg-warm-cream rounded-xl border border-warm-earth/20">
               <blockquote className="font-playfair text-xl italic text-warm-brown text-center">
                 "Cada ser humano é único, e merece um cuidado tão especial quanto sua essência."
