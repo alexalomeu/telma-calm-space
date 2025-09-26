@@ -1,19 +1,13 @@
 import telmaPortrait from "@/assets/telma-portrait.jpg";
-
 const AboutSection = () => {
-  return (
-    <section id="sobre" className="py-20 px-4 bg-background">
+  return <section id="sobre" className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Imagem */}
           <div className="order-2 lg:order-1 animate-scale-in">
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-primary rounded-2xl transform rotate-3 opacity-20"></div>
-              <img 
-                src={telmaPortrait} 
-                alt="Telma Cavalcante - Terapeuta Integrativa"
-                className="relative w-full max-w-md mx-auto rounded-2xl shadow-elegant object-cover aspect-[4/5]"
-              />
+              <img src={telmaPortrait} alt="Telma Cavalcante - Terapeuta Integrativa" className="relative w-full max-w-md mx-auto rounded-2xl shadow-elegant object-cover aspect-[4/5]" />
             </div>
           </div>
 
@@ -24,16 +18,12 @@ const AboutSection = () => {
             </h2>
             
             <div className="space-y-6 font-inter text-lg text-muted-foreground leading-relaxed">
-              <p>
-                Com mais de uma década dedicada ao cuidado integral da saúde mental e emocional, 
-                acredito profundamente que cada pessoa possui em si a capacidade de cura e transformação.
-              </p>
+              <p>Meu objetivo é ajudar você a alcançar bem-estar físico, mental e emocional.
+Acredito profundamente que cada pessoa possui em si a capacidade de equilíbrio e transformação.
+
+            </p>
               
-              <p>
-                Minha abordagem combina técnicas tradicionais da psicoterapia com práticas integrativas 
-                milenares, criando um espaço acolhedor onde mente, corpo e espírito são cuidados 
-                de forma harmoniosa.
-              </p>
+              <p>Minha abordagem combina técnicas da psicoterapia e da neurociência com práticas integrativas naturais, criando um espaço acolhedor em que mente e corpo são cuidados de forma harmoniosa.</p>
               
               <p>
                 Através de um olhar humanizado e respeitoso, acompanho pessoas em sua jornada de 
@@ -50,8 +40,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default AboutSection;
