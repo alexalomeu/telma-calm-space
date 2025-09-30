@@ -33,31 +33,7 @@ const ContactSection = () => {
           </Button>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-12">
-          <Card className="bg-card/90 backdrop-blur-sm border-warm-earth/20 hover:shadow-warm hover:scale-105 hover:border-accent/30 transition-all duration-300 animate-scale-in group cursor-pointer" onClick={handleWhatsAppClick}>
-            <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                <Phone className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <h3 className="font-playfair text-lg font-semibold text-foreground mb-2">WhatsApp</h3>
-              <p className="font-inter text-sm text-muted-foreground">(95) 98419-8978</p>
-            </CardContent>
-          </Card>
-
-          <Card className="bg-card/90 backdrop-blur-sm border-warm-earth/20 hover:shadow-warm hover:scale-105 hover:border-accent/30 transition-all duration-300 animate-scale-in cursor-pointer group" onClick={handleEmailClick}>
-            
-          </Card>
-
-          <Card className="bg-card/90 backdrop-blur-sm border-warm-earth/20 hover:shadow-warm hover:scale-105 hover:border-accent/30 transition-all duration-300 animate-scale-in cursor-pointer group" onClick={handleInstagramClick}>
-            <CardContent className="p-6 text-center">
-              <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                <Instagram className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <h3 className="font-playfair text-lg font-semibold text-foreground mb-2">Instagram</h3>
-              <p className="font-inter text-sm text-muted-foreground">@telmacavalcante_terapia</p>
-            </CardContent>
-          </Card>
-        </div>
+        
 
         <div className="bg-warm-cream rounded-xl p-8 border border-warm-earth/20 animate-fade-in">
           <div className="flex items-center justify-center space-x-3 mb-4">
