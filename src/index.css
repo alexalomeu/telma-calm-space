@@ -53,11 +53,14 @@ All colors MUST be HSL.
     --gradient-warm: linear-gradient(135deg, hsl(42 25% 94%), hsl(38 25% 88%));
     --gradient-primary: linear-gradient(135deg, hsl(32 45% 48%), hsl(35 55% 42%));
     --gradient-subtle: linear-gradient(180deg, hsl(42 15% 97%), hsl(40 20% 99%));
+    --gradient-hero: linear-gradient(135deg, hsl(42 30% 96%), hsl(38 35% 92%), hsl(35 40% 88%));
+    --gradient-glow: radial-gradient(circle at top right, hsl(35 60% 55% / 0.15), transparent 50%);
     
     /* Shadows */
     --shadow-soft: 0 4px 20px -2px hsl(32 45% 48% / 0.1);
     --shadow-warm: 0 8px 30px -4px hsl(32 45% 48% / 0.15);
     --shadow-elegant: 0 12px 40px -8px hsl(32 45% 48% / 0.2);
+    --shadow-glow: 0 0 60px -10px hsl(35 60% 55% / 0.3);
     
     /* Transitions */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

@@ -43,8 +43,12 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-subtle" id="depoimentos">
-      <div className="max-w-6xl mx-auto">
+    <section className="py-20 px-4 bg-gradient-subtle relative overflow-hidden" id="depoimentos">
+      {/* Decorative background */}
+      <div className="absolute top-10 left-1/4 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-gentle-float"></div>
+      <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-gentle-float" style={{ animationDelay: '1.5s' }}></div>
+      
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-4">
             Histórias de Transformação
@@ -58,25 +62,25 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="bg-card border-border shadow-soft hover:shadow-warm transition-all duration-300 animate-fade-in"
+              className="bg-card/90 backdrop-blur-sm border-warm-earth/20 shadow-soft hover:shadow-elegant hover:scale-105 hover:-translate-y-2 hover:border-accent/30 transition-all duration-500 animate-fade-in group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-8">
                 <div className="flex items-start gap-4 mb-6">
-                  <Avatar className="w-14 h-14 border-2 border-primary/20">
+                  <Avatar className="w-14 h-14 border-2 border-primary/20 group-hover:scale-110 group-hover:border-accent/40 transition-all duration-300">
                     <AvatarFallback className="bg-gradient-primary text-primary-foreground font-semibold text-lg">
                       {testimonial.initials}
                     </AvatarFallback>
                   </Avatar>
                   <div className="flex-1">
-                    <h3 className="font-semibold text-xl text-foreground mb-1">
+                    <h3 className="font-playfair font-semibold text-xl text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
                       {testimonial.name}
                     </h3>
                     <p className="text-sm text-primary font-medium">
                       {testimonial.therapy}
                     </p>
                   </div>
-                  <Quote className="w-8 h-8 text-primary/20" />
+                  <Quote className="w-8 h-8 text-primary/20 group-hover:text-accent/40 group-hover:scale-110 transition-all duration-300" />
                 </div>
                 <blockquote className="text-muted-foreground italic leading-relaxed">
                   "{testimonial.text}"
