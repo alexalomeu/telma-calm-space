@@ -2,21 +2,14 @@ import { Button } from "@/components/ui/button";
 import { Phone, Sparkles } from "lucide-react";
 import telmaPortrait from "@/assets/telma-portrait.jpg";
 import decorativeElements from "@/assets/decorative-elements.png";
-
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
     window.open("https://wa.me/5511999999999", "_blank");
   };
-
-  return (
-    <section className="min-h-screen bg-gradient-hero relative overflow-hidden flex items-center justify-center px-4 py-32">
+  return <section className="min-h-screen bg-gradient-hero relative overflow-hidden flex items-center justify-center px-4 py-32">
       {/* Decorative background elements */}
       <div className="absolute inset-0 bg-gradient-glow opacity-40"></div>
-      <img 
-        src={decorativeElements} 
-        alt="" 
-        className="absolute top-0 right-0 w-1/2 h-full object-cover opacity-20 pointer-events-none"
-      />
+      <img src={decorativeElements} alt="" className="absolute top-0 right-0 w-1/2 h-full object-cover opacity-20 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Text Column */}
@@ -46,25 +39,12 @@ const HeroSection = () => {
           </div>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button 
-              variant="therapy" 
-              size="xl"
-              onClick={handleWhatsAppClick}
-              className="font-inter shadow-glow group"
-            >
+            <Button variant="therapy" size="xl" onClick={handleWhatsAppClick} className="font-inter shadow-glow group">
               <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
               Agende sua sessão
             </Button>
             
-            <Button 
-              variant="gentle" 
-              size="xl"
-              onClick={() => document.getElementById('sobre')?.scrollIntoView({ behavior: 'smooth' })}
-              className="font-inter group"
-            >
-              Conheça meu trabalho
-              <Sparkles className="w-4 h-4 ml-2 group-hover:scale-110 transition-transform duration-300" />
-            </Button>
+            
           </div>
         </div>
 
@@ -72,20 +52,16 @@ const HeroSection = () => {
         <div className="relative animate-scale-in">
           <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 animate-gentle-float"></div>
           <div className="relative rounded-3xl overflow-hidden shadow-elegant border-4 border-background">
-            <img 
-              src={telmaPortrait} 
-              alt="Telma Cavalcante - Terapeuta Integrativa" 
-              className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700"
-            />
+            <img src={telmaPortrait} alt="Telma Cavalcante - Terapeuta Integrativa" className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700" />
           </div>
           
           {/* Decorative floating elements */}
           <div className="absolute -top-6 -right-6 w-24 h-24 bg-accent/20 rounded-full blur-2xl animate-gentle-float"></div>
-          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl animate-gentle-float" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl animate-gentle-float" style={{
+          animationDelay: '1s'
+        }}></div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default HeroSection;
