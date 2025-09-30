@@ -8,7 +8,7 @@ const HeroSection = () => {
   };
   return <section className="min-h-screen bg-gradient-hero relative overflow-hidden flex items-center justify-center px-4 py-32">
       {/* Decorative background elements */}
-      <div className="absolute inset-0 bg-gradient-glow opacity-40"></div>
+      
       <img src={decorativeElements} alt="" className="absolute top-0 right-0 w-1/2 h-full object-cover opacity-20 pointer-events-none" />
       
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
@@ -52,7 +52,7 @@ const HeroSection = () => {
         <div className="relative animate-scale-in">
           <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 animate-gentle-float"></div>
           <div className="relative rounded-3xl overflow-hidden shadow-elegant border-4 border-background">
-            <img src={telmaPortrait} alt="Telma Cavalcante - Terapeuta Integrativa" className="w-full h-auto object-cover transform hover:scale-105 transition-transform duration-700" />
+            
           </div>
           
           {/* Decorative floating elements */}
