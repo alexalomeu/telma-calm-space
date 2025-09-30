@@ -10,14 +10,6 @@ const Header = () => {
             alt="Telma Cavalcante Logo" 
             className="w-12 h-12 object-contain"
           />
-          <div>
-            <h1 className="font-playfair text-xl font-bold text-foreground">
-              Telma Cavalcante
-            </h1>
-            <p className="font-inter text-xs text-muted-foreground">
-              Terapeuta Integrativa
-            </p>
-          </div>
         </div>
         
         <nav className="hidden md:flex items-center space-x-6">

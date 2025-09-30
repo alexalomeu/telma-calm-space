@@ -9,8 +9,11 @@ const HeroSection = () => {
   return <section className="min-h-screen bg-gradient-hero relative overflow-hidden flex items-center justify-center px-4 py-32">
       {/* Decorative background elements */}
       
-      <img src={decorativeElements} alt="" className="absolute top-0 right-0 w-1/2 h-full object-cover opacity-20 pointer-events-none" />
-      
+      <img 
+        src={decorativeElements} 
+        alt="" 
+        className="absolute top-0 left-0 w-full h-full object-cover opacity-20 pointer-events-none" 
+      />      
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
         {/* Text Column */}
         <div className="text-left animate-fade-in space-y-8">
