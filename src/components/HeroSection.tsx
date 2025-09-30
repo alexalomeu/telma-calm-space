@@ -5,7 +5,7 @@ import decorativeElements from "@/assets/decorative-elements.png";
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
      const message = encodeURIComponent("Olá, eu vi seu site, gostaria de saber mais.");
-     window.open(`https://wa.me/5595 8419-8978?text=${message}`, "_blank");
+     window.open(`https://wa.me/5595984198978?text=${message}`, "_blank");
   };
   return <section className="min-h-screen bg-gradient-hero relative overflow-hidden flex items-center justify-center px-4 py-32">
       {/* Decorative background elements */}

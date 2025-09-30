@@ -4,7 +4,7 @@ import { Phone, Mail, Instagram, MapPin } from "lucide-react";
 const ContactSection = () => {
   const handleWhatsAppClick = () => {
     const message = encodeURIComponent("Olá, eu vi seu site, gostaria de saber mais.");
-    window.open(`https://wa.me/5595 8419-8978?text=${message}`, "_blank");
+    window.open(`https://wa.me/5595984198978?text=${message}`, "_blank");
   };
   const handleEmailClick = () => {
     window.open("mailto:telma@terapiaintegrativa.com", "_blank");
