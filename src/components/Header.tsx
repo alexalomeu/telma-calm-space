@@ -8,7 +8,7 @@ const Header = () => {
           <img 
             src={logoIcon} 
             alt="Telma Cavalcante Logo" 
-            className="w-12 h-12 object-contain"
+            className="h-16 object-contain"
           />
         </div>
         
