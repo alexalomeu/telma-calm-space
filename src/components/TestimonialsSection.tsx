@@ -1,6 +1,13 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Quote } from "lucide-react";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const testimonials = [
   {
@@ -58,37 +65,48 @@ const TestimonialsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          {testimonials.map((testimonial, index) => (
-            <Card
-              key={index}
-              className="bg-card/90 backdrop-blur-sm border-warm-earth/20 shadow-soft hover:shadow-elegant hover:scale-105 hover:-translate-y-2 hover:border-accent/30 transition-all duration-500 animate-fade-in group"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <CardContent className="p-8">
-                <div className="flex items-start gap-4 mb-6">
-                  <Avatar className="w-14 h-14 border-2 border-primary/20 group-hover:scale-110 group-hover:border-accent/40 transition-all duration-300">
-                    <AvatarFallback className="bg-gradient-primary text-primary-foreground font-semibold text-lg">
-                      {testimonial.initials}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div className="flex-1">
-                    <h3 className="font-playfair font-semibold text-xl text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
-                      {testimonial.name}
-                    </h3>
-                    <p className="text-sm text-primary font-medium">
-                      {testimonial.therapy}
-                    </p>
-                  </div>
-                  <Quote className="w-8 h-8 text-primary/20 group-hover:text-accent/40 group-hover:scale-110 transition-all duration-300" />
-                </div>
-                <blockquote className="text-muted-foreground italic leading-relaxed">
-                  "{testimonial.text}"
-                </blockquote>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <Carousel
+          opts={{
+            align: "start",
+            loop: true,
+          }}
+          className="w-full max-w-5xl mx-auto"
+        >
+          <CarouselContent className="-ml-4">
+            {testimonials.map((testimonial, index) => (
+              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/2">
+                <Card
+                  className="bg-card/90 backdrop-blur-sm border-warm-earth/20 shadow-soft hover:shadow-elegant hover:scale-105 hover:-translate-y-2 hover:border-accent/30 transition-all duration-500 animate-fade-in group h-full"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <CardContent className="p-8">
+                    <div className="flex items-start gap-4 mb-6">
+                      <Avatar className="w-14 h-14 border-2 border-primary/20 group-hover:scale-110 group-hover:border-accent/40 transition-all duration-300">
+                        <AvatarFallback className="bg-gradient-primary text-primary-foreground font-semibold text-lg">
+                          {testimonial.initials}
+                        </AvatarFallback>
+                      </Avatar>
+                      <div className="flex-1">
+                        <h3 className="font-playfair font-semibold text-xl text-foreground mb-1 group-hover:text-primary transition-colors duration-300">
+                          {testimonial.name}
+                        </h3>
+                        <p className="text-sm text-primary font-medium">
+                          {testimonial.therapy}
+                        </p>
+                      </div>
+                      <Quote className="w-8 h-8 text-primary/20 group-hover:text-accent/40 group-hover:scale-110 transition-all duration-300" />
+                    </div>
+                    <blockquote className="text-muted-foreground italic leading-relaxed">
+                      "{testimonial.text}"
+                    </blockquote>
+                  </CardContent>
+                </Card>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious className="hidden md:flex -left-12" />
+          <CarouselNext className="hidden md:flex -right-12" />
+        </Carousel>
       </div>
     </section>
   );
