@@ -54,7 +54,7 @@ const approaches = [
   },
   {
     title: "EFT",
-    description: "Técnica de Liberdade Emocional que combina acupressão e psicologia para liberar bloqueios emocionais e reduzir o estresse de forma rápida e eficaz.",
+    description: "Técnica de Liberação  Emocional que combina Acupuntura sem agulhas e psicoterapia, para liberar bloqueios emocionais e reduzir o estresse e a ansiedade de forma rápida e eficaz.",
     icon: Zap,
   },
 ];
