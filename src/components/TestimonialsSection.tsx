@@ -50,21 +50,29 @@ const testimonials = [
 
 const TestimonialsSection = () => {
   return (
-    <section className="py-20 px-4 bg-gradient-subtle relative overflow-hidden" id="depoimentos">
-      {/* Decorative background */}
+    <section
+      className="py-20 px-4 bg-gradient-subtle relative overflow-hidden"
+      id="depoimentos"
+    >
+      {/* Bolhas decorativas */}
       <div className="absolute top-10 left-1/4 w-80 h-80 bg-primary/5 rounded-full blur-3xl animate-gentle-float"></div>
-      <div className="absolute bottom-10 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-gentle-float" style={{ animationDelay: '1.5s' }}></div>
-      
+      <div
+        className="absolute bottom-10 right-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-gentle-float"
+        style={{ animationDelay: "1.5s" }}
+      ></div>
+
       <div className="max-w-6xl mx-auto relative z-10">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-4">
             Histórias de Transformação
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Depoimentos reais de pessoas que encontraram cura emocional e bem-estar
+            Depoimentos reais de pessoas que encontraram cura emocional e
+            bem-estar
           </p>
         </div>
 
+        {/* Carrossel */}
         <Carousel
           opts={{
             align: "start",
@@ -72,14 +80,17 @@ const TestimonialsSection = () => {
           }}
           className="w-full max-w-5xl mx-auto"
         >
-          <CarouselContent className="-ml-4">
+          <CarouselContent className="-ml-4 flex">
             {testimonials.map((testimonial, index) => (
-              <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/2">
+              <CarouselItem
+                key={index}
+                className="pl-4 basis-full md:basis-1/2 lg:basis-1/3"
+              >
                 <Card
                   className="bg-card/90 backdrop-blur-sm border-warm-earth/20 shadow-soft hover:shadow-elegant hover:scale-105 hover:-translate-y-2 hover:border-accent/30 transition-all duration-500 animate-fade-in group h-full"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <CardContent className="p-8">
+                  <CardContent className="p-6 sm:p-8 h-full flex flex-col">
                     <div className="flex items-start gap-4 mb-6">
                       <Avatar className="w-14 h-14 border-2 border-primary/20 group-hover:scale-110 group-hover:border-accent/40 transition-all duration-300">
                         <AvatarFallback className="bg-gradient-primary text-primary-foreground font-semibold text-lg">
@@ -96,7 +107,7 @@ const TestimonialsSection = () => {
                       </div>
                       <Quote className="w-8 h-8 text-primary/20 group-hover:text-accent/40 group-hover:scale-110 transition-all duration-300" />
                     </div>
-                    <blockquote className="text-muted-foreground italic leading-relaxed">
+                    <blockquote className="text-muted-foreground italic leading-relaxed flex-1">
                       "{testimonial.text}"
                     </blockquote>
                   </CardContent>
