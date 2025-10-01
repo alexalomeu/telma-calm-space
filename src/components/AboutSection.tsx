@@ -27,7 +27,7 @@ const AboutSection = () => {
               
               <p>Minha abordagem combina técnicas da psicoterapia e da neurociência com práticas integrativas naturais, criando um espaço acolhedor em que mente e corpo são cuidados de forma harmoniosa. Através de um olhar humanizado, respeitoso e acolhedor, acompanho você em sua jornada de autoconhecimento, equilíbrio e bem-estar, oferecendo ferramentas práticas para que possa viver com mais leveza e se libertar do que tem limitado a sua vida.</p>
               
-              <p>Além disso, auxilio você a identificar a verdadeira origem dos problemas emocionais — como ansiedade, depressão, pânico, compulsão, entre outros — trabalhando na causa e não apenas nos sintomas, para que a transformação seja profunda e duradoura.</p>
+              <p>Além disso, ajudo você a identificar a verdadeira origem dos problemas emocionais — como ansiedade, depressão, pânico, compulsão, entre outros — trabalhando na causa e não apenas nos sintomas, para que a transformação seja profunda e completa.</p>
             </div>
 
             <div className="mt-8 p-8 bg-gradient-primary rounded-2xl shadow-glow relative overflow-hidden">

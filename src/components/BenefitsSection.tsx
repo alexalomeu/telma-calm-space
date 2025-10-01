@@ -31,8 +31,8 @@ const BenefitsSection = () => {
 
         <div className="mt-12 p-8 bg-gradient-primary rounded-2xl text-center animate-fade-in shadow-glow relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-glow opacity-30"></div>
-          <p className="font-script text-2xl md:text-3xl text-primary-foreground relative z-10">"Terapia não é gasto é  investimento  no seu-bem 
-emocional, mental e físico!"</p>
+          <p className="font-script text-2xl md:text-3xl text-primary-foreground relative z-10">"Terapia não é gasto é  investimento  no seu 
+bem-estar emocional, mental e físico!"</p>
         </div>
       </div>
     </section>;
