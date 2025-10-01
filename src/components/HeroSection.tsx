@@ -4,17 +4,13 @@ import telmaPortrait from "@/assets/telma-portrait.jpg";
 import decorativeElements from "@/assets/decorative-elements.png";
 const HeroSection = () => {
   const handleWhatsAppClick = () => {
-     const message = encodeURIComponent("Olá, eu vi seu site, gostaria de saber mais.");
-     window.open(`https://wa.me/5595984198978?text=${message}`, "_blank");
+    const message = encodeURIComponent("Olá, eu vi seu site, gostaria de saber mais.");
+    window.open(`https://wa.me/5595984198978?text=${message}`, "_blank");
   };
   return <section className="min-h-screen bg-gradient-hero relative overflow-hidden flex items-center justify-center px-4 py-32">
       {/* Decorative background elements */}
       
-      <img 
-        src={decorativeElements} 
-        alt="" 
-        className="absolute top-0 left-0 w-full h-full object-cover opacity-20 pointer-events-none" 
-      />      
+      <img src={decorativeElements} alt="" className="absolute top-0 left-0 w-full h-full object-cover opacity-20 pointer-events-none" />      
       <div className="max-w-7xl mx-auto grid gap-12 items-center relative z-10">
         {/* Text Column */}
         <div className="text-left animate-fade-in space-y-8">
@@ -28,9 +24,7 @@ const HeroSection = () => {
               Telma Cavalcante
             </h1>
 
-            <p className="font-script text-3xl md:text-4xl text-primary/90 font-medium">
-              "Cuidando da sua mente, corpo e bem-estar"
-            </p>
+            <p className="font-script text-3xl md:text-4xl text-primary/90 font-medium"> Cuidando do seu bem-estar emocional, mental e físico!</p>
 
             <div className="space-y-2">
               <p className="font-inter text-lg text-muted-foreground">
@@ -54,7 +48,9 @@ const HeroSection = () => {
         <div className="relative animate-scale-in w-full">
           <div className="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 animate-gentle-float"></div>
           <div className="absolute -top-6 -right-6 w-24 h-24 bg-accent/20 rounded-full blur-2xl animate-gentle-float"></div>
-          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl animate-gentle-float" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-primary/20 rounded-full blur-2xl animate-gentle-float" style={{
+          animationDelay: '1s'
+        }}></div>
         </div>
       </div>
 
